@@ -1,16 +1,22 @@
-# k8s_IaC_ArgoCD
+# **k8s_IaC_ArgoCD**
 
+
+
+
+O objetivo deste projeto é fazer o deploy de um cluster Kubernetes
+no ambiente da AWS via Terraform e posteriormente fazer o deploy do
+argoCD juntamente com a aplicação ....
 
 Neste projeto vou provisionar um cluster kubernets no ambiente da AWS 
 utilizando Terraform.  Vou fazer o deploy do argoCD junto com uma 
 aplicação.
 
 
-A primeira parte do processo é cadastrar um conta AWS à sua máquina
-para que o Terraform possa. Para isso você precisa fazer a instalação
-da AWSCLI. Em uma distribuições linux derivadas de Debian isso a instalação
-pode ser feita por
 
-```
-sudo apt install awscli
-```
+# **Acknowledgements**
+I acknoledge Gabriel Bonifácio for several helpful discussions. 
+
+
+# **Author**
+Alexandre Penteado Furlan
+
