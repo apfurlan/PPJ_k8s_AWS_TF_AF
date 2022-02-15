@@ -41,7 +41,7 @@ sudo apt-get update && sudo apt-get install terraform
 
 The goal of this project provisioning a [MkDocs](https://www.mkdocs.org) application in a Kubernetes cluster hosted in AWS. (**Explain MkDocs**)The infrastructure will be created through the [Hashcorp Terraform](https://www.terraform.io). (**Explain Terraform**)
 
-THe applications will be deployed through the Declarative GitOps CD 
+The applications will be deployed through the Declarative GitOps CD 
 for Kubernetes [ArgoCD](https://argo-cd.readthedocs.io/en/stable/)
 
 
@@ -49,14 +49,19 @@ for Kubernetes [ArgoCD](https://argo-cd.readthedocs.io/en/stable/)
 ### **Folders**
 
 - infrastructure : Corresponds to the terraform files to provisioning
-the EKS.
+EKS and VPC.
 - k8s :
-    - argoCD : bash scripts to connect to the k8s cluster
+    - ArgoCD : bash scripts to connect to the k8s cluster
     - MkDocs : Manifests(.yaml) to deploy in argoCD 
 
 
+# **How to interact with your project**
+Just download (or git-clone) this project and adapt the codes to 
+suit your needs.
+
+
 # **Acknowledgements**
-I acknoledge Gabriel Bonifácio for several helpful discussions. 
+I acknoledge [Gabriel Bonifácio](https://github.com/ghbonifacio) for several helpful discussions. 
 
 
 # **Author**
