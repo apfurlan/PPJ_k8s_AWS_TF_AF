@@ -1,12 +1,16 @@
 # **k8s_IaC_ArgoCD**
 
-aws-cli >= 1.18.69 
-Terraform >= v1.1.5
-kubectl 
-module EKS >=
-module VPC >= 
+aws-cli >= 1.18.69  \
+Terraform >= v1.1.5 \
+kubectl >= 1.21  \
+module EKS >= \
+module VPC >=  
 
-## install kubectl 
+
+## **install kubectl** 
+
+The instalation of the CLI kubectl was performed follow the oficial
+documentation of [Kubernetes](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/#install-kubectl-binary-with-curl-on-linux)  
 ```
 curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
 ```
