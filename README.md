@@ -22,7 +22,11 @@ sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
 ```
 kubectl version --client
 ```
-## **install Terraform**
+## **install Terraform for debian based Linux distro** 
+The installation of terraform can be done by following the 
+[official documentation] 
+(https://learn.hashicorp.com/tutorials/terraform/install-cli). For debian based linux distro the lines below are 
+sufficient. 
 ```
 sudo apt-get update && sudo apt-get install -y gnupg software-properties-common curl
 ```
