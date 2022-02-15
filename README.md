@@ -1,16 +1,40 @@
 # **k8s_IaC_ArgoCD**
 
+aws-cli >= 1.18.69 
+Terraform >= v1.1.5
+kubectl 
+module EKS >=
+module VPC >= 
+
+## install kubectl 
+```
+curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+```
+
+```
+sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
+```
+
+```
+kubectl version --client
+```
+
+# **Project's Title : Provisioning MkDocs in a Kubernetes Cluster**
+
+The goal of this project provisioning a [MkDocs](https://www.mkdocs.org) application in a Kubernetes cluster hosted in AWS. (**Explain MkDocs**)The infrastructure will be created through the [Hashcorp Terraform](https://www.terraform.io). (**Explain Terraform**)
+
+THe applications will be deployed through the Declarative GitOps CD 
+for Kubernetes [ArgoCD](https://argo-cd.readthedocs.io/en/stable/)
 
 
+## **File Descriptions**
+### **Folders**
 
-O objetivo deste projeto é fazer o deploy de um cluster Kubernetes
-no ambiente da AWS via Terraform e posteriormente fazer o deploy do
-argoCD juntamente com a aplicação ....
-
-Neste projeto vou provisionar um cluster kubernets no ambiente da AWS 
-utilizando Terraform.  Vou fazer o deploy do argoCD junto com uma 
-aplicação.
-
+- infrastructure : Corresponds to the terraform files to provisioning
+the EKS.
+- k8s :
+    - argoCD : bash scripts to connect to the k8s cluster
+    - MkDocs : Manifests(.yaml) to deploy in argoCD 
 
 
 # **Acknowledgements**
