@@ -12,19 +12,19 @@ data "aws_availability_zones" "available" {}
 #             Variaveis Gerais
 #============================================================
 
-variable "cliente" {
+variable "Project" {
   type = string
 }
 
-variable "mantenedor" {
+variable "IaC" {
   type = string
 }
 
-variable "ambiente" {
+variable "Cloud" {
   type = string
 }
 
-variable "time" {
+variable "Applications" {
   type = string
 }
 
@@ -37,19 +37,7 @@ variable "aws_region" {
 }
 
 locals {
-  cluster_name = "eks-k8s-${var.ambiente}-${var.mantenedor}"
-}
-
-#===================================================
-#             Variaveis Buckets
-#===================================================
-
-variable "bucket_names" {
-  type = list(string)
-}
-
-variable "bucket_function" {
-  type = list(string)
+  cluster_name = "eks-${var.IaC}"
 }
 
 #============================================================

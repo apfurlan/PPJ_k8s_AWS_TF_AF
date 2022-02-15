@@ -1,29 +1,8 @@
-#variable "region" {
-#  default     = "us-east-1"
-#  description = "AWS region"
-#}
-
-#provider "aws" {
-#  region = var.aws_region
-#}
-
-#data "aws_availability_zones" "available" {}
-
-#locals {
-#  cluster_name = "k8s_cluster_mtd_teste"
-#"a3data-k8s-stack-${random_string.suffix.result}"
-#}
-
-#resource "random_string" "suffix" {
-#  length  = 8
-#  special = false
-#}
-
 module "vpc" {
   source  = "terraform-aws-modules/vpc/aws"
   version = "3.2.0"
 
-  name                 = "vpc-${var.ambiente}-${var.mantenedor}"
+  name                 = "vpc-${var.Project}-${var.IaC}"
   cidr                 = var.cidr_vpc
   azs                  = data.aws_availability_zones.available.names
   private_subnets      = var.private_subnets_vpc
