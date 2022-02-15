@@ -5,11 +5,12 @@ Neste projeto vou provisionar um cluster kubernets no ambiente da AWS
 utilizando Terraform.  Vou fazer o deploy do argoCD junto com uma 
 aplicação.
 
-<div class="github-card" data-user="lepture"></div>
-<script src="https://cdn.jsdelivr.net/gh/lepture/github-cards@latest/jsdelivr/widget.js"></script>
 
+A primeira parte do processo é cadastrar um conta AWS à sua máquina
+para que o Terraform possa. Para isso você precisa fazer a instalação
+da AWSCLI. Em uma distribuições linux derivadas de Debian isso a instalação
+pode ser feita por
 
-<meta name="gc:base" content="http://lab.lepture.com/github-cards/">
-<meta name="gc:theme" content="medium">
-<meta name="gc:client-id" content="client id string">
-<meta name="gc:client-secret" content="client secret string">
+```
+sudo apt install awscli
+```
