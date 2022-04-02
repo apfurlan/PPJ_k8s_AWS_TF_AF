@@ -1,12 +1,22 @@
 # **k8s_IaC_ArgoCD**
 
+
+[![Build Status](https://github.com/cotes2020/jekyll-theme-chirpy/workflows/build/badge.svg?branch=master&event=push)](https://github.com/cotes2020/jekyll-theme-chirpy/actions?query=branch%3Amaster+event%3Apush)
+[![GitHub license](https://img.shields.io/github/license/cotes2020/jekyll-theme-chirpy.svg)](https://github.com/cotes2020/jekyll-theme-chirpy/blob/master/LICENSE)
+  
+
+ 
+
 aws-cli >= 1.18.69  \
 Terraform >= v1.1.5 \
 kubectl >= 1.21  \
 module EKS >= \
 module VPC >=  
 
+<br/>
+<br/>
 
+# **Instalations**
 ## **install kubectl** 
 
 The instalation of the CLI kubectl was performed follow the oficial
@@ -37,6 +47,11 @@ curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
 sudo apt-get update && sudo apt-get install terraform
 ```
 
+## **Install Terraform from binary file** 
+
+<br/>
+<br/>
+
 # **Project's Title : Provisioning MkDocs in a Kubernetes Cluster**
 
 The goal of this project provisioning a [MkDocs](https://www.mkdocs.org) application in a Kubernetes cluster hosted in AWS. (**Explain MkDocs**)The infrastructure will be created through the [Hashcorp Terraform](https://www.terraform.io). (**Explain Terraform**)
@@ -54,16 +69,46 @@ EKS and VPC.
     - ArgoCD : bash scripts to connect to the k8s cluster
     - MkDocs : Manifests(.yaml) to deploy in argoCD 
 
+<br/>
+<br/>
 
 # **How to interact with your project**
 Just download (or git-clone) this project and adapt the codes to 
 suit your needs.
 
 
+# **Licensing**
+## **MIT License**
+Copyright (c) 2021 Alexandre P. Furlan
+
+Permission is hereby granted, free of charge, to any person obtaining a
+copy of this software and associated documentation files (the "Software")
+, to deal in the Software without restriction, including without 
+limitation the rights to use, copy, modify, merge, publish, distribute,
+sublicense, and/or sell copies of the Software, and to permit persons 
+to whom the Software is furnished to do so, subject to the following
+conditions:
+
+The above copyright notice and this permission notice shall be included 
+in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL 
+THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
+DEALINGS IN THE SOFTWARE.
+
+<br/>
+<br/>
+
 # **Acknowledgements**
 I acknoledge [Gabriel Bonifácio](https://github.com/ghbonifacio) for several helpful discussions. 
 
+<br/>
+<br/>
 
 # **Author**
-Alexandre Penteado Furlan
-
+1 - Alexandre Penteado Furlan \
+2 - 

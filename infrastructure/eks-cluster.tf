@@ -3,9 +3,9 @@ module "eks" {
   version         = "~> 17.24.0"
   cluster_name    = local.cluster_name
   cluster_version = var.cluster_version
-  subnets         = module.vpc.private_subnets
+  subnets         = var.private_subnets_vpc
 
-  vpc_id = module.vpc.vpc_id
+  vpc_id = var.vpc_id_sb 
 
   cluster_endpoint_private_access = "true"
 
@@ -16,7 +16,7 @@ module "eks" {
   
   worker_groups = [
     {
-      name                          = "worker-group-${var.ambiente}-${var.mantenedor}-1"
+      name                          = "worker-group-${var.Project}-${var.IaC}-1"
       instance_type                 = var.instance_type
       additional_userdata           = "echo foo bar"
       asg_desired_capacity          = 2

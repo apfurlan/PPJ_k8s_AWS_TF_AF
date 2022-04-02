@@ -24,9 +24,9 @@ variable "Cloud" {
   type = string
 }
 
-variable "Applications" {
-  type = string
-}
+#variable "Applications" {
+#  type = string
+#}
 
 variable "tags" {
   type = map(string)
@@ -37,8 +37,9 @@ variable "aws_region" {
 }
 
 locals {
-  cluster_name = "eks-${var.IaC}"
+  cluster_name = "eks-${var.IaC}-SS-AF"
 }
+
 
 #============================================================
 #             Variaveis VPC
@@ -52,9 +53,10 @@ variable "private_subnets_vpc" {
   type = list(string)
 }
 
-variable "public_subnets_vpc" {
-  type = list(string)
+variable "vpc_id_sb"{
+  type = string
 }
+
 
 #============================================================
 #             Variaveis EKS
