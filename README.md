@@ -3,8 +3,8 @@
 
 [![Build Status](https://github.com/cotes2020/jekyll-theme-chirpy/workflows/build/badge.svg?branch=master&event=push)](https://github.com/cotes2020/jekyll-theme-chirpy/actions?query=branch%3Amaster+event%3Apush)
 [![GitHub license](https://img.shields.io/github/license/cotes2020/jekyll-theme-chirpy.svg)](https://github.com/cotes2020/jekyll-theme-chirpy/blob/master/LICENSE)
-  
-
+[![Build Status](https://github.com/cotes2020/jekyll-theme-chirpy/workflows/build/badge.svg?branch=master&event=push)](https://github.com/cotes2020/jekyll-theme-chirpy/actions?query=branch%3Amaster+event%3Apush)
+[![Discourse badge](https://img.shields.io/discourse/https/discourse.jupyter.org/users.svg?color=%23f37626)](https://www.terraform.io/ "Terraform Documentation")
  
 
 aws-cli >= 1.18.69  \
@@ -16,7 +16,29 @@ module VPC >=
 <br/>
 <br/>
 
-# **Instalations**
+# **Project's Title : Provisioning a Kubernetes cluster on Amazon EKS**
+## Providing Airflow and Superset
+
+The goal of this project provisioning a [MkDocs](https://www.mkdocs.org) application in a Kubernetes cluster hosted in AWS. (**Explain MkDocs**)The infrastructure will be created through the [Hashcorp Terraform](https://www.terraform.io). (**Explain Terraform**)
+
+The applications will be deployed through the Declarative GitOps CD 
+for Kubernetes [ArgoCD](https://argo-cd.readthedocs.io/en/stable/)
+
+
+## **File Descriptions**
+### **Folders**
+
+- infrastructure : Corresponds to the terraform files to provisioning
+EKS and VPC.
+- k8s :
+    - ArgoCD : bash scripts to connect to the k8s cluster
+    - MkDocs : Manifests(.yaml) to deploy in argoCD 
+
+<br/>
+<br/>
+
+
+# **Required Instalations**
 ## **install kubectl** 
 
 The instalation of the CLI kubectl was performed follow the oficial
@@ -48,26 +70,6 @@ sudo apt-get update && sudo apt-get install terraform
 ```
 
 ## **Install Terraform from binary file** 
-
-<br/>
-<br/>
-
-# **Project's Title : Provisioning MkDocs in a Kubernetes Cluster**
-
-The goal of this project provisioning a [MkDocs](https://www.mkdocs.org) application in a Kubernetes cluster hosted in AWS. (**Explain MkDocs**)The infrastructure will be created through the [Hashcorp Terraform](https://www.terraform.io). (**Explain Terraform**)
-
-The applications will be deployed through the Declarative GitOps CD 
-for Kubernetes [ArgoCD](https://argo-cd.readthedocs.io/en/stable/)
-
-
-## **File Descriptions**
-### **Folders**
-
-- infrastructure : Corresponds to the terraform files to provisioning
-EKS and VPC.
-- k8s :
-    - ArgoCD : bash scripts to connect to the k8s cluster
-    - MkDocs : Manifests(.yaml) to deploy in argoCD 
 
 <br/>
 <br/>
