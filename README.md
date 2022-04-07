@@ -19,20 +19,27 @@ module VPC >=
 # **Project's Title : Provisioning a Kubernetes cluster on Amazon EKS**
 ## Providing Airflow and Superset
 
-The goal of this project provisioning a [MkDocs](https://www.mkdocs.org) application in a Kubernetes cluster hosted in AWS. (**Explain MkDocs**)The infrastructure will be created through the [Hashcorp Terraform](https://www.terraform.io). (**Explain Terraform**)
 
-The applications will be deployed through the Declarative GitOps CD 
-for Kubernetes [ArgoCD](https://argo-cd.readthedocs.io/en/stable/)
+O objetivo deste projeto é fazer o deploy de um cluster Kubernetes na AWS
+através do Amazon EKS. Para a realização do deploy vamos utilizar o 
+[Terraform](https://www.terraform.io) juntamente com seu módulo 
+[aws-eks](https://registry.terraform.io/modules/terraform-aws-modules/eks/aws/latest). 
+
+Vamos ainda dar um passo além e fazer o deploy de duas aplicações extremamente 
+usadas no universo da Engenharia de dados, o orquestrador 
+[Apache Airflow](https://airflow.apache.org/) e também a ferramenta de dataviz
+o [Apache Superset](https://superset.apache.org/).  
 
 
 ## **File Descriptions**
 ### **Folders**
 
 - infrastructure : Corresponds to the terraform files to provisioning
-EKS and VPC.
+EKS.
+
 - k8s :
-    - ArgoCD : bash scripts to connect to the k8s cluster
-    - MkDocs : Manifests(.yaml) to deploy in argoCD 
+    - Airflow : .yaml files to deploy  
+    - Superset : .yaml files to deploy 
 
 <br/>
 <br/>
@@ -68,8 +75,6 @@ curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
 ```
 sudo apt-get update && sudo apt-get install terraform
 ```
-
-## **Install Terraform from binary file** 
 
 <br/>
 <br/>
@@ -112,5 +117,4 @@ I acknoledge [Gabriel Bonifácio](https://github.com/ghbonifacio) for several he
 <br/>
 
 # **Author**
-1 - Alexandre Penteado Furlan \
-2 - 
+1 - Alexandre Penteado Furlan
