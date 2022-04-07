@@ -7,24 +7,18 @@
 [![Discourse badge](https://img.shields.io/discourse/https/discourse.jupyter.org/users.svg?color=%23f37626)](https://www.terraform.io/ "Terraform Documentation")
  
 
-aws-cli >= 1.18.69  \
-Terraform >= v1.1.5 \
-kubectl >= 1.21  \
-module EKS >= \
-module VPC >=  
-
 <br/>
 <br/>
 
-O objetivo deste projeto é fazer o deploy de um cluster Kubernetes na AWS
-através do Amazon EKS. Para a realização do deploy vamos utilizar o 
-[Terraform](https://www.terraform.io) juntamente com seu módulo 
-[aws-eks](https://registry.terraform.io/modules/terraform-aws-modules/eks/aws/latest). 
+The goal of this project is to deploy a Kubernetes cluster on AWS through Amazon EKS. 
+To perform the deployment we will use [Terraform](https://www.terraform.io) together with 
+its [aws-eks](https://registry.terraform.io/modules/terraform-aws-modules/eks/aws/latest)
+module. 
 
-Vamos ainda dar um passo além e fazer o deploy de duas aplicações extremamente 
-usadas no universo da Engenharia de dados, o orquestrador 
-[Apache Airflow](https://airflow.apache.org/) e também a ferramenta de dataviz
-o [Apache Superset](https://superset.apache.org/).  
+Let's take this a step further and deploy two applications that are extremely 
+used in the data engineering world, the orchestrator 
+[Apache Airflow](https://airflow.apache.org/) and also a dataviz tool,
+the [Apache Superset](https://superset.apache.org/).  
 
 
 ## **File Descriptions**
