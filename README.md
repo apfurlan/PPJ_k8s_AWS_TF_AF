@@ -13,9 +13,7 @@
 The goal of this project is to deploy a Kubernetes cluster on AWS through Amazon EKS. 
 To perform the deployment we will use [Terraform](https://www.terraform.io) together with 
 its [aws-eks](https://registry.terraform.io/modules/terraform-aws-modules/eks/aws/latest)
-module. 
-
-Let's take this a step further and deploy two applications that are extremely 
+module. We will also be deploying two applications that are extremely 
 used in the data engineering world, the orchestrator 
 [Apache Airflow](https://airflow.apache.org/) and also a dataviz tool,
 the [Apache Superset](https://superset.apache.org/).  
