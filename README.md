@@ -1,5 +1,5 @@
-# **k8s_IaC_ArgoCD**
-
+# **Provisioning a Kubernetes cluster on Amazon EKS**
+## Providing Airflow and Superset
 
 [![Build Status](https://github.com/cotes2020/jekyll-theme-chirpy/workflows/build/badge.svg?branch=master&event=push)](https://github.com/cotes2020/jekyll-theme-chirpy/actions?query=branch%3Amaster+event%3Apush)
 [![GitHub license](https://img.shields.io/github/license/cotes2020/jekyll-theme-chirpy.svg)](https://github.com/cotes2020/jekyll-theme-chirpy/blob/master/LICENSE)
@@ -15,10 +15,6 @@ module VPC >=
 
 <br/>
 <br/>
-
-# **Project's Title : Provisioning a Kubernetes cluster on Amazon EKS**
-## Providing Airflow and Superset
-
 
 O objetivo deste projeto é fazer o deploy de um cluster Kubernetes na AWS
 através do Amazon EKS. Para a realização do deploy vamos utilizar o 
