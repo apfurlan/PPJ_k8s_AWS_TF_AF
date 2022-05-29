@@ -9,7 +9,7 @@ from airflow.decorators import dag, task
     catchup=False,
     tags=['example'],
 )
-def tutorial_taskflow_api_etl():
+def extract_brazilian_public_data():
     """
     ### TaskFlow API Tutorial Documentation
     This is a simple ETL data pipeline example which demonstrates the use of
@@ -55,4 +55,4 @@ def tutorial_taskflow_api_etl():
     order_data = extract()
     order_summary = transform(order_data)
     load(order_summary["total_order_value"])
-tutorial_etl_dag = tutorial_taskflow_api_etl()
+tutorial_etl_dag = extract_brazilian_public_data()
