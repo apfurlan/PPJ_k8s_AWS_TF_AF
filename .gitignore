@@ -1,4 +1,4 @@
 
 push.sh
-/env/*.tfvars
+infrastructure/env/proj.tfvars
 .terraform/
