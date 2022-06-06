@@ -6,7 +6,6 @@ aws_region = "us-east-1"
 availability_zone = ["us-east-1a","us-east-1b", "us-east-1c",
     "us-east-1d","us-east-1e","us-east-1f"]
 
-
 Project = "k8s-etl-bi"
 
 IaC = "terraform"
@@ -22,15 +21,13 @@ tags = {
 #===================================================
 #             Bucket Variables
 #===================================================
-
 bucket_names = ["bronze","silver"]
-bucket_function = ["lake"]
+bucket_function = ["lake","logs"]
 
 
 #=================================================================
-#                          EKS Variables
+#                        EKS Variables
 #=================================================================
-
 cluster_version = "1.21"
 
 volume_type = "gp2"
@@ -41,7 +38,7 @@ map_users = [{
     "groups"   = ["system:masters"]
 }]
 
-instance_type = "t2.xlarge"
+instance_type = "t2.medium"
 
 #===================================================================
 #                        VPC variables

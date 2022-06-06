@@ -24,12 +24,6 @@ module "eks" {
     },
   ]
 
-  # preciso testar esta parte. Ainda não foi testada. 	
-  #worker_additional_security_group_ids = [aws_security_group.all_worker_mgmt.id]
-  #map_roles                            = var.map_roles
-  #map_users                            = var.map_users
-  #map_accounts                         = var.map_accounts
-
   tags = var.tags
 }
 
